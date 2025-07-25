@@ -13,12 +13,12 @@ This repository contains the backend and frontend code for the KuraKani. The pro
 
 To clone the repository **with the frontend included**, use the following command:
 
-git clone --recurse-submodules https://github.com/NisanRana/summary.git
+`git clone --recurse-submodules https://github.com/NisanRana/summary.git`
 
 If you've already cloned the repository without the submodule, run:
 
-cd summary
-git submodule update --init --recursive
+`cd summary
+git submodule update --init --recursive`
 
 This will initialize and fetch the contents of the `frontend` submodule.
 
@@ -40,16 +40,16 @@ Make sure to install the necessary dependencies for both backend and frontend.
 
 ### Backend
 
-cd backend
+`cd backend`
 # (Activate your virtual environment if needed)
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 # Run your backend server
 
 ### Frontend
 
-cd frontend
+`cd frontend
 npm install
-npm start
+npm start`
 
 Adjust these commands according to your project setup and frameworks used.
 
@@ -59,7 +59,7 @@ Adjust these commands according to your project setup and frameworks used.
 
 - Frontend folder is empty after clone  
   Run:
-  git submodule update --init --recursive
+  `git submodule update --init --recursive`
 
 - 403 or authentication error when cloning submodule  
   Make sure the submodule repository is public or that you have access (via SSH or GitHub token if private).
