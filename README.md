@@ -1,4 +1,4 @@
-# 📦 Summary
+# 📦KuraKani
 
 This repository contains the backend and frontend code for the KuraKani. The project is organized into two main components:
 
@@ -17,21 +17,21 @@ To clone the repository **with the frontend included**, use the following comman
 
 If you've already cloned the repository without the submodule, run:
 
-`cd summary
-git submodule update --init --recursive`
+`cd summary` <br>
+`git submodule update --init --recursive`
 
 This will initialize and fetch the contents of the `frontend` submodule.
 
 ---
 
 ## 📁 Project Structure
-
-summary/
-├── backend/          # Backend code (API, logic, etc.)
-├── frontend/         # Frontend code as a Git submodule
-├── .gitmodules       # Git submodule configuration file
-└── README.md         # Project documentation
-
+<pre>
+KuraKani/ 
+├── Backend/          # Backend code (API, logic, etc.) 
+├── Frontend/         # Frontend code as a Git submodule 
+├── .gitmodules       # Git submodule configuration file 
+└── README.md         # Project documentation 
+</pre>
 ---
 
 ## 🧪 Running the Project
@@ -47,9 +47,9 @@ Make sure to install the necessary dependencies for both backend and frontend.
 
 ### Frontend
 
-`cd frontend
-npm install
-npm start`
+`cd frontend` <br>
+`npm install` <br>
+`npm start`
 
 Adjust these commands according to your project setup and frameworks used.
 
