@@ -1,15 +1,15 @@
+from pydantic import BaseModel
+from datetime import datetime
 
-class Article:
-    def __init__(self, title: str, content: str, source: str, published_at: str):
-        self.title = title
-        self.content = content
-        self.source = source
-        self.published_at = published_at
+class Article(BaseModel):
+    title: str
+    content: str
+    source: str
+    published_at: str
+    country: str | None = None
+    category: str | None = None
+    cluster_id: int = 0
 
-    def to_dict(self):
-        return {
-            "title": self.title,
-            "content": self.content,
-            "source": self.source,
-            "published_at": self.published_at
-        }
+    def to_dict(self) -> dict:
+        """Convert Article to dictionary for database storage."""
+        return self.dict(exclude_none=True)

@@ -1,10 +1,10 @@
 fastapi
 uvicorn
 requests
-feedparser
-pymongo
-sentence-transformers
-transformers
-torch
+scikit-learn
 pytest
 python-dotenv
+passlib[bcrypt]
+python-jose
+pydantic[email]
+python-multipart
